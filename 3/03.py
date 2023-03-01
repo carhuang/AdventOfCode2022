@@ -32,8 +32,8 @@ def find_badge_in_group(elf1, elf2, elf3):
     set1 = set(elf1)
     set2 = set(elf2)
     set3 = set(elf3)
-    # use min() to retrieve the 1 item from the intersection set
-    return min(set1.intersection(set2, set3))
+    # use pop() to retrieve the 1 item from the intersection set
+    return set1.intersection(set2, set3).pop()
 
 def part2():
     priorities_sum = 0
