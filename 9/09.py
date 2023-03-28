@@ -51,11 +51,11 @@ def part1():
 def part2():
     visited_pos = set()
     rope = [[0, 0] for _ in range(10)]
+    head = rope[0]
     tail = rope[-1]
     visited_pos.add((tail[0], tail[1]))
     for motion in motions:
         direction, steps = motion.split()[0], int(motion.split()[1])
-        head = rope[0]
         while steps > 0:
             if direction == 'R':
                 head[0] += 1

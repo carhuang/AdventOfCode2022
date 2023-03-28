@@ -1,2 +1,2 @@
 # AdventOfCode2022
-Answers to my Advent of Code 2022 Participation in Python.
+Answers to Advent of Code 2022 in Python 3.
