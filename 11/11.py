@@ -2,8 +2,6 @@
 Day 11: Monkey in the Middle
 """
 
-from collections import deque
-
 # read the input
 with open('./input.txt', 'r') as f:
     lines = f.readlines()
