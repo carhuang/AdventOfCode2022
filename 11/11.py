@@ -45,6 +45,7 @@ class Monkey:
         for i in range(len(self.items)):
             self.items[i] %= PRODUCT  
             # PRODUCT is the product of all the monkey's divisibility test numbers
+            # this works because all the divisibility test numbers are prime numbers
 
 
 monkeys = []
