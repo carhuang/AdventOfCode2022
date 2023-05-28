@@ -2,7 +2,7 @@
 
 I struggled a lot with parsing the given input.
 
-The major error that I made was with 2D matrix initialization in Python. To map out the cave map, I started out with populating an 2D array of adequate size (700, which is larger than all coordinates in the input) with 0s to represent an empty cave. Below is my code for doing this:
+The major error that I made was with 2D matrix initialization in Python. To map out the cave map, I started out with populating an 2D array of adequate size (`700`, which is larger than all coordinates in the input) with `0`s to represent an empty cave. Below is my code for doing this:
 ```python
 rows, cols = 700, 700
 cave_map = [[0]*cols]*rows
@@ -13,4 +13,4 @@ The solution is to initialize the 2D matrix with List Comprehension:
 ```python
 cave_map = [[0 for _ in range(cols)] for _ in range(rows)]
 ```
-In this way, 700 separate list objects will be created, and updating any element in the map will not affect the other rows in the map.
+In this way, `700` separate list objects will be created, and updating any element in the map will not affect the other rows in the map.
